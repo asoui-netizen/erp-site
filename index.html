@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERP Ayoub</title>
-    <style>
-        body {
-            margin: 0;
-            background: #f8f9fa;
-        }
-        .container {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+<title>Accès sécurisé</title>
+<script>
+function checkPassword() {
+  var pw = document.getElementById("password").value;
+
+  // 🔐 Ici tu mets ton mot de passe :
+  if (pw === "CG25CG26") {
+
+    // 🔗 Ici tu mets ton lien Power BI :
+    window.location = "https://app.powerbi.com/view?r=eyJrIjoiMzg4Yjc4NzMtYzBmNi00OGFmLWJhYWQtMjM2MzlmZjgwZTg2IiwidCI6IjkwNzcyYmM2LTQ4ZDktNDliZC04Y2Q4LTEwNDgzZDNiMDFlYyJ9";
+  } else {
+    alert("Mot de passe incorrect");
+  }
+}
+</script>
 </head>
-<body>
-    <div class="container">
-        <iframe src=https://app.powerbi.com/view?r=eyJrIjoiMzg4Yjc4NzMtYzBmNi00OGFmLWJhYWQtMjM2MzlmZjgwZTg2IiwidCI6IjkwNzcyYmM2LTQ4ZDktNDliZC04Y2Q4LTEwNDgzZDNiMDFlYyJ9></iframe>
-    </div>
+<body style="font-family: Arial; margin-top: 100px; text-align:center">
+<h2>Accès sécurisé</h2>
+<input type="password" id="password" placeholder="Mot de passe" style="padding:10px">
+<button onclick="checkPassword()" style="padding:10px 20px; margin-left:10px">Entrer</button>
 </body>
 </html>
